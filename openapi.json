@@ -228,6 +228,16 @@
             }
         },
         "/restaurants/{restaurantId}/menus": {
+            "parameters": [
+                {
+                    "name": "restaurantId",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
             "post": {
                 "summary": "Create a new menu item",
                 "requestBody": {
